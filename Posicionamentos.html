@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <title>Posicionamentos (static, relative, absolute e fixed)</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <style type="text/css">
+                body{
+                    background: #007fc7;
+                }
+                #container{
+                    background: #fff;
+                    width: 800px;
+                    margin: 10px auto;
+                    padding: 10px;
+                    position: relative;
+
+
+                }
+
+                p{
+                    width: 300px;
+                }
+                /* posição relative usa sempre comandos depois dele para definir onder sera a posição relativa, podendo-se usar valores negativos. Ex. -20px*/
+                .relative{
+                    border: 1px solid red;
+                    position: relative;
+                    /*top, right, left, bottom*/
+                    left: 350px;
+                }
+
+                .static{
+                    position: static;
+                    /*é a posição padrão*/
+                }
+
+                .absolute{
+                    position: absolute;
+                    top: 80px;
+                    right: 80px;
+                    border: 1px solid red;
+                    background: #f2f2f2;
+                    /*Ele mantem o objeto na tela acima de outros, mas ainda esta sujeito a barra de rolagem*/
+                }
+
+                .fixed{
+                    border: 1px solid red;
+                    background: #f2f2f2;
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    /*Ele mantem o objeto fixo na tela mesmo que movimente a barra de rolagem.*/
+                }
+
+            </style>
+
+        </head>
+
+        <body>
+
+            <div id="container">
+                <h1>Posicionamentos</h1>
+                <p>P1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eum quam atque illum expedita et ea voluptates quae sint, minus sunt quis magni. Quasi consequuntur est temporibus repellendus, nihil voluptatum?</p>
+
+                <p class="fixed">P2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eum quam atque illum expedita et ea voluptates quae sint, minus sunt quis magni. Quasi consequuntur est temporibus repellendus, nihil voluptatum?</p>
+    
+
+                <p>P3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eum quam atque illum expedita et ea voluptates quae sint, minus sunt quis magni. Quasi consequuntur est temporibus repellendus, nihil voluptatum?</p>
+
+
+            </div>
+            
+        </body>
+    </html>
