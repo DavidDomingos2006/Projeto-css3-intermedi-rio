@@ -35,12 +35,34 @@
     </style>
 </head>
 <body>
+    <h1>Usando links externos</h1>
 
-    <a href="https://www.google.com.br">Google</a> |
+    <p>No codigo usamos o atributo 'target' com a propriedade '_blank' para que ao clicar no link, o mesmo seja aberto em outra pagina.</p>
 
-    <a href="https://www.tecmundo.com.br">Tec Mundo</a> |
+    <a href="https://www.google.com.br" target="_blank" rel="external">Google</a> |
 
-    <a href="https://tudocelular.com.br">Tudo Celular</a>
+    <a href="https://www.tecmundo.com.br" target="_blank" rel="external">Tec Mundo</a> |
+
+    <a href="https://tudocelular.com.br" target="_blank" rel="external">Tudo Celular</a>
+
+    <h1>Usando links internos</h1>
+    <p>Quando vamos acessar uma pagina que está em nosso projeto chamamos isso de link interno. Na hora de definirmos o link no 'href' não precisamos escrever http://...</p>
+    <p>Apenas colocamos o nome do arquivo diretamente: 'a href=''links2.html''....</p>
+    <span>Pagina 2 links -> </span> <a href="links2.html" rel="next" target="_self">Pagina 2 links</a>
+
+    <h2>Usando links para downloads</h2>
+    <h3>Para fazermos download de um arquivo será necessário utilizarmos alguns atributos e propriedades</h3>
+    <p>
+        Usamos a tag 'a' os atributos ''href=''nomedoarquivo.pdf'' em seguida usamos o utilizamos o atributo: ''download=nomedoarquivo.pdf'' e por fim utilizamos o atributo ''type''= application/pdf. Cada tipo de arquivo (png, jpg, doc...) tem sua propria forma e por isso se faz necessário uma consulta na internet para ver qual propriedade usar para o respectivo tipo de arquivo
+    </p>
+    <p>Download livro de engenharia <a href="download/engenhariaSoft.pdf" download="engenhariaSoft.pdf" type="application/pdf">clique aqui</a>
+    </p>
+    <p>
+        Download foto <a href="imagens/" download="imagem5.png" type="application/png">clique aqui</a>
+    </p> 
+
+
+
     
 </body>
 </html>
